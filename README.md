@@ -33,8 +33,6 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Server</summary>
   <ul>
@@ -53,8 +51,6 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
 
 - **Create a database named vet_clinic**
 - **Insert data to the database**
@@ -92,7 +88,7 @@ Install this project with:
 
 To run the project, execute the following command:
 
--  connect to you database
+-  connect to your database
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,9 +108,9 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[create animals table]**
-- **[Find all animals whose name ends in "mon"]**
-- **[Find all animals with a weight between 10.4kg and 17.3kg]**
+- **create animals table**
+- **Find all animals whose name ends in "mon"**
+- **Find all animals with a weight between 10.4kg and 17.3kg**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
