@@ -25,7 +25,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Vet_clinic] <a name="about-project"></a>
+# 📖 Vet_clinic <a name="about-project"></a>
 
 **Vet_clinic** database is a comprehensive repository of data about the animals that visit the clinic. This data includes the animal's name, date of birth, weight, and other relevant information.
 
