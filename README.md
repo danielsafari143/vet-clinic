@@ -27,9 +27,7 @@
 
 # 📖 [Vet_clinic] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[Vet_clinic]** database is a comprehensive repository of data about the animals that visit the clinic. This data includes the animal's name, date of birth, weight, and other relevant information.
+**Vet_clinic** database is a comprehensive repository of data about the animals that visit the clinic. This data includes the animal's name, date of birth, weight, and other relevant information.
 
 ## 🛠 Built With <a name="built-with"></a>
 
