@@ -56,9 +56,9 @@
 
 > Describe between 1-3 key features of the application.
 
-- **[Create a database named vet_clinic]**
-- **[Insert data to the database]**
-- **[Retrieve data from the database]**
+- **Create a database named vet_clinic**
+- **Insert data to the database**
+- **Retrieve data from the database**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,8 +100,6 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Safari Hamuli**
 
 - GitHub: [@githubhandle](https://github.com/danielsafari143)
@@ -113,8 +111,6 @@ To run the project, execute the following command:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - **[create animals table]**
 - **[Find all animals whose name ends in "mon"]**
@@ -136,8 +132,6 @@ Feel free to check the [issues page](https://github.com/danielsafari143/vet-clin
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project, support and encourage me and give this project a ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -145,8 +139,6 @@ If you like this project, support and encourage me and give this project a ⭐�
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to express my sincere gratitude to my coding partners for their unwavering support
 
