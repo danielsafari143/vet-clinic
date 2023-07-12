@@ -20,3 +20,26 @@ INSERT INTO animals (id , name , date_of_birth , escape_attempts , neutered , we
 
 INSERT INTO animals (id , name , date_of_birth , escape_attempts , neutered , weight_kg)  VALUES 
 (DEFAULT , 'Ditto' , ('2022-5-14'), 4 , true , 22);
+
+INSERT INTO owners VALUES (DEFAULT ,'Sam Smith' , 34);
+INSERT INTO owners VALUES (DEFAULT ,'Jennifer Orwell'  , 19);
+INSERT INTO owners VALUES (DEFAULT ,'Bob'  , 45 );
+INSERT INTO owners VALUES (DEFAULT ,'Melody Pond'  , 77) ;
+INSERT INTO owners VALUES (DEFAULT ,'Dean Winchester'  , 14 );
+INSERT INTO owners VALUES (DEFAULT ,'Jodie Whittaker' ,  38);
+
+INSERT INTO species VALUES (DEFAULT , 'Pokemon');
+INSERT INTO species VALUES (DEFAULT , 'Digimon');
+
+UPDATE animals
+SET species_id =
+CASE
+WHEN name LIKE '%mon' THEN 'Digimon'
+ELSE 'Pokemon'
+END;
+
+UPDATE animals SET owner_id = 'Dean Winchester' WHERE name = 'Angemon' OR name = 'Boarmon';
+UPDATE animals SET owner_id = 'Melody Pond' WHERE name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom';
+UPDATE animals SET owner_id = 'Bob owns' WHERE name = 'Devimon' OR name = 'Plantmon';
+UPDATE animals SET owner_id = 'Jennifer Orwell' WHERE name = 'Gabumon' OR name = 'Pikachu';
+UPDATE animals SET owner_id = 'Sam Smith' WHERE name = 'Agumon';
