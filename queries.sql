@@ -35,3 +35,36 @@
  SELECT * FROM animals JOIN species  ON species.name = species_id WHERE owner_id = 'Jennifer Orwell';
  SELECT * FROM animals JOIN species  ON species.name = species_id WHERE animals.name = 'Dean Winchester' AND escape_attempts = 0;
  SELECT owner_id , count(species_id)  FROM animals JOIN owners  ON owners.full_name = owner_id GROUP BY owner_id;
+
+SELECT name, date_of_visit FROM animals JOIN visits ON visits.animal_id = animals.id WHERE vets_id = 'William Tatcher'
+AND date_of_visit = (
+  SELECT MAX(date_of_visit)
+  FROM visits
+  WHERE vets_id = 'William Tatcher'
+);
+
+SELECT count(*) FROM visits GROUP BY vets_id  HAVING vets_id = 'Stephanie Mendez';
+
+SELECT * FROM vets FULL OUTER JOIN specializations ON name = vets_id;
+
+SELECT * FROM animals JOIN visits ON visits.animal_id = id WHERE vets_id = 'Stephanie Mendez' AND date_of_visit BETWEEN '2020-4-1' AND  '2020-8-30';
+
+SELECT name , count(*) FROM animals JOIN visits ON visits.animal_id = id GROUP BY name ORDER BY count DESC;
+
+SELECT name, date_of_visit FROM animals JOIN visits ON visits.animal_id = animals.id WHERE vets_id = 'Maisy Smith'
+AND date_of_visit = (
+  SELECT MIN(date_of_visit)
+  FROM visits
+  WHERE vets_id = 'Maisy Smith'
+);
+
+SELECT * FROM animals
+JOIN visits ON visits.animal_id = id
+JOIN vets ON vets.name = visits.vets_id 
+WHERE  date_of_visit = (
+  SELECT MAX(date_of_visit)
+  FROM visits
+);
+
+SELECT count(*) FROM vets FULL OUTER JOIN specializations ON name = vets_id WHERE species_id IS NULL;
+

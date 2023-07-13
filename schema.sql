@@ -38,3 +38,25 @@ ADD COLUMN owner_id VARCHAR(50),
 ADD CONSTRAINT owner_id
 FOREIGN KEY (owner_id) REFERENCES owners (full_name);
 SELECT * FROM animals;
+
+ CREATE TABLE vets(
+ id INT GENERATED ALWAYS AS IDENTITY,
+ name VARCHAR(20),
+ age INT,
+ date_of_graduation DATE,
+ PRIMARY KEY(name)
+ );
+
+ CREATE TABLE specializations (
+ vets_id VARCHAR(50) ,
+ species_id VARCHAR(50),
+ FOREIGN KEY (species_id) REFERENCES species (name),
+ FOREIGN KEY (vets_id) REFERENCES vets (name)
+ );
+
+ CREATE TABLE visits (
+ animal_id INT,
+ vets_id VARCHAR(50) ,
+ FOREIGN KEY (animal_id) REFERENCES animals (id),
+ FOREIGN KEY (vets_id) REFERENCES vets (name)
+ );
