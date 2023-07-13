@@ -57,6 +57,7 @@ SELECT * FROM animals;
  CREATE TABLE visits (
  animal_id INT,
  vets_id VARCHAR(50) ,
+ date_of_visit DATE,
  FOREIGN KEY (animal_id) REFERENCES animals (id),
  FOREIGN KEY (vets_id) REFERENCES vets (name)
  );

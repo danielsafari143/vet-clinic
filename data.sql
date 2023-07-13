@@ -61,23 +61,23 @@ INSERT INTO specializations VALUES ('Stephanie Mendez' , 'Digimon');
 INSERT INTO specializations VALUES ('Stephanie Mendez' , 'Pokemon');
 INSERT INTO specializations VALUES ('Jack Harkness' , 'Digimon');
 
-8  'William Tatcher' on May 24th, 2020.
-8  Stephanie Mendez on Jul 22th, 2020.
-9  Jack Harkness on Feb 2nd, 2021.
-10  Maisy Smith on Jan 5th, 2020.
-10  Maisy Smith on Mar 8th, 2020.
-10  Maisy Smith on May 14th, 2020.
-11  Stephanie Mendez on May 4th, 2021.
-1  Jack Harkness on Feb 24th, 2021.
-2  Maisy Smith on Dec 21st, 2019.
-2  William Tatcher on Aug 10th, 2020.
-2  Maisy Smith on Apr 7th, 2021.
-3  Stephanie Mendez on Sep 29th, 2019.
-4  Jack Harkness on Oct 3rd, 2020.
-4  Jack Harkness on Nov 4th, 2020.
-5  Maisy Smith on Jan 24th, 2019.
-5  Maisy Smith on May 15th, 2019.
-5  Maisy Smith on Feb 27th, 2020.
-5  Maisy Smith on Aug 3rd, 2020.
-6  Stephanie Mendez on May 24th, 2020.
-6  William Tatcher on Jan 11th, 2021.
+INSERT INTO visits VALUES (8  , 'William Tatcher' , ('2020-5-24'));
+INSERT INTO visits VALUES (8  , 'Stephanie Mendez' , ('2020-7-22'));
+INSERT INTO visits VALUES (9  , 'Jack Harkness' , ('2021-2-2'));
+INSERT INTO visits VALUES (10 , 'Maisy Smith' , ('2020-1-5'));
+INSERT INTO visits VALUES (10 , 'Maisy Smith' , ('2020-3-8'));
+INSERT INTO visits VALUES (10 , 'Maisy Smith' , ('2020-5-14'));
+INSERT INTO visits VALUES (11 , 'Stephanie Mendez' , ('2021-5-4'));
+INSERT INTO visits VALUES (1  , 'Jack Harkness' , ('2021-2-24'));
+INSERT INTO visits VALUES (2  , 'Maisy Smith' , ('2019-12-24'));
+INSERT INTO visits VALUES (2  , 'William Tatcher' , ('2020-8-10'));
+INSERT INTO visits VALUES (2  , 'Maisy Smith' , ('2021-4-7'));
+INSERT INTO visits VALUES (3  , 'Stephanie Mendez' , ('2019-9-29'));
+INSERT INTO visits VALUES (4  , 'Jack Harkness' , ('2020-10-3'));
+INSERT INTO visits VALUES (4  , 'Jack Harkness' , ('2020-11-4'));
+INSERT INTO visits VALUES (5  , 'Maisy Smith' , ('2019-1-24'));
+INSERT INTO visits VALUES (5  , 'Maisy Smith' , ('2019-5-15'));
+INSERT INTO visits VALUES (5  , 'Maisy Smith' , ('2020-2-27'));
+INSERT INTO visits VALUES (5  , 'Maisy Smith' , ('2020-8-3'));
+INSERT INTO visits VALUES (6  , 'Stephanie Mendez' , ('2020-5-24'));
+INSERT INTO visits VALUES (6  , 'William Tatcher' , ('2021-1-11'));

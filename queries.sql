@@ -67,4 +67,5 @@ WHERE  date_of_visit = (
 );
 
 SELECT count(*) FROM vets FULL OUTER JOIN specializations ON name = vets_id WHERE species_id IS NULL;
+SELECT species_id ,  count(*)  FROM animals FULL OUTER JOIN visits ON animal_id = id GROUP BY species_id , vets_id  HAVING vets_id = 'Maisy Smith';
 
