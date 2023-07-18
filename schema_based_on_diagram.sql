@@ -20,3 +20,13 @@ payed_at TIMESTAMP ,
 medical_history_id INT,
 FOREIGN KEY (medical_history_id) REFERENCES medical_histories (id));
 
+CREATE TABLE invoice_items (
+id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+unit_price DECIMAL,
+quantity INT,
+total_price DECIMAL,
+invoice_id INT,
+treatment_id INT,
+FOREIGN KEY (invoices_id) REFERENCES invoices (id),
+FOREIGN KEY (treatments_id) REFERENCES treatments (id)
+);
