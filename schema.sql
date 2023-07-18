@@ -44,19 +44,20 @@ SELECT * FROM animals;
  name VARCHAR(20),
  age INT,
  date_of_graduation DATE,
- PRIMARY KEY(name)
+ PRIMARY KEY(id)
  );
 
  CREATE TABLE specializations (
  vets_id VARCHAR(50) ,
  species_id VARCHAR(50),
- FOREIGN KEY (species_id) REFERENCES species (name),
- FOREIGN KEY (vets_id) REFERENCES vets (name)
+ FOREIGN KEY (species_id) REFERENCES species (id),
+ FOREIGN KEY (vets_id) REFERENCES vets (id)
  );
 
  CREATE TABLE visits (
  animal_id INT,
  vets_id VARCHAR(50) ,
+ date_of_visit DATE,
  FOREIGN KEY (animal_id) REFERENCES animals (id),
- FOREIGN KEY (vets_id) REFERENCES vets (name)
+ FOREIGN KEY (vets_id) REFERENCES vets (id)
  );
