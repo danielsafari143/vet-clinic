@@ -30,3 +30,17 @@ treatment_id INT,
 FOREIGN KEY (invoices_id) REFERENCES invoices (id),
 FOREIGN KEY (treatments_id) REFERENCES treatments (id)
 );
+
+CREATE TABLE treatments (
+id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+type VARCHAR(50),
+name VARCHAR(50),
+);
+
+
+CREATE TABLE treatments_histories (
+medical_histories_id INT,
+treatments_id INT,
+FOREIGN KEY (medical_histories_id) REFERENCES medical_histories (id),
+FOREIGN KEY (treatments_id) REFERENCES treatments(id)
+);
